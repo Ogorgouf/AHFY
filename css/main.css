@@ -24,7 +24,7 @@ header
 .premiere_vue
 {
     background-image: url(../img/background-acceuil.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     height: 110vh;
