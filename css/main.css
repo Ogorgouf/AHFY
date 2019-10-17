@@ -1,7 +1,12 @@
 body
 {
+    background-color: #ddd;
     margin: 0;
     padding: 0;
+}
+h1
+{
+    color:rgb(2, 110, 35);
 }
 *
 {
@@ -29,8 +34,66 @@ header
     background-position: center;
     height: 110vh;
 }
+.nom_association
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(104, 50, 6);
+}
+.presentation
+{
+    
+    text-align: right;
+    padding:20vh 10vw 0 0;
+}
+.slogan
+{
+    display: inline-block;
+    width: 300px;
+    color: gray;
+    font-size: 20px;
+}
+.notifications{
+    width: 70%;
+    margin: auto;
+    
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
+    border-top: 2px solid rgb(243, 140, 22);
+    display: flex;
+    flex-direction: column;
+}
+.notification{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
+    border-top: 2px solid rgb(0, 173, 52);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.notification_image
+{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+}
+.notification_image 
+{
+    padding: auto;
+}
+.notification_texte
+{
+    padding:20px;
+}
 footer
 {
+    margin-top: 70px;
     height: 100px;
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
