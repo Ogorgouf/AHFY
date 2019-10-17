@@ -1,0 +1,1 @@
+<?php include("view/aj.view.php")?>

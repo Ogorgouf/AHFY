@@ -1,0 +1,1 @@
+<?php include("view/generation80.view.php")?>

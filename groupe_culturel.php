@@ -1,0 +1,1 @@
+<?php include("view/groupe_culturel.view.php")?>
