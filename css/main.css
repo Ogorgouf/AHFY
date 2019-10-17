@@ -3,15 +3,31 @@ body
     margin: 0;
     padding: 0;
 }
+*
+{
+    font-family: segoe ui;
+}
+a
+{
+    color: white;
+}
 header
 {
-    height: 110px;
-    width: 80%;
-    border-bottom: 1px solid rgb(243, 140, 22);
+    position: fixed;
+    left: 20%;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.438);
     margin: auto;
-    padding: 40px;
+    padding: 30px 0 30px 0;
 
     
+}
+.premiere_vue
+{
+    background-image: url(../img/background-acceuil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 110vh;
 }
 footer
 {
@@ -24,14 +40,24 @@ footer
     text-align: center;
     color: azure;
     padding-top: 30px;
-    font-family: segoe ui;
+    
 }
 .les_liens
 {
     text-decoration: none;
-    color:black;
     padding: 15px;
-    position: relative;
     left: 35%;
     font-family: segoe ui;
+    padding-bottom: 30px;
+    transition: .9s;
+}
+.les_liens:hover
+{
+    border-bottom: 2px solid rgb(243, 140, 22);
+    transition: .9s;
+}
+.current
+{
+    border-bottom: 2px solid rgb(243, 140, 22);
+    padding-bottom: 30px;
 }

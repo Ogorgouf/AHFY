@@ -12,7 +12,8 @@
 <!---------Header------------------------------------------->
 <?php include("include/header.php")?>
 
-dddddddddddddddddddddddddddddddddddddd
+<section class="premiere_vue">
+</section>
 <!---------Footer------------------------------------------->
 <?php include("include/footer.php")?>
 

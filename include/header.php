@@ -1,6 +1,6 @@
-<header>
+<header align="center">
     <nav>
-        <a href="" class="les_liens">AHFY</a>
+        <a href="" class="les_liens current">AHFY</a>
         <a href="" class="les_liens">AFFY</a>
         <a href="" class="les_liens">Association des jeunes</a>
         <a href="" class="les_liens">Groupes culturels</a>
