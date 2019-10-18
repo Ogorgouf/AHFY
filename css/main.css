@@ -1,8 +1,10 @@
 body
 {
-    background-color: #ddd;
+    background-image: url(../img/background-body.jpg);
     margin: 0;
     padding: 0;
+    background-size: cover;
+    background-position: top;
 }
 h1
 {
