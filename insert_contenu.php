@@ -1,0 +1,1 @@
+<?php include('view/insert_contenu.view.php') ?>
