@@ -184,3 +184,95 @@ footer
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
 }
+.liste_des_membres
+{
+
+}
+.titre_liste
+{
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    color: brown;
+    margin-bottom: 10vh;
+}
+.liste_membre
+{
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: space-around;
+    margin-top: 10vh;
+}
+.liste
+{
+    border: 1px solid  rgb(243, 140, 22);
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 5px;
+    text-transform: uppercase;
+    font-family: segoe ui;
+    color: green;
+    height: 30vh;
+    margin-top: 5vh;
+}
+.photo_de_profil
+{
+    height: 60px;
+    width: 60px;
+    border: 2px solid  rgb(243, 140, 22);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px;
+    padding: 3px;
+    background-color: grey;
+}
+.nom
+{
+    border: 1px solid  rgb(243, 140, 22);   
+}
+.conexion
+{
+    width:10px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.form
+{
+    text-align: center;
+}
+form
+{
+    border: 1px solid orange;
+    border-radius: 5%;
+    display: inline-block;
+    padding: 10px;
+    margin: auto;
+}
+input
+{
+    width: 250px;
+    height: 50px;
+    font-family: segoe ui;
+    border-color: orange;
+    border-radius: 10px;
+    border-style: solid;
+}
+.submit
+{
+    background-color: orange;
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.input_email_mdp
+{
+    background-color: rgb(114, 231, 114);
+    font-weight: bold;
+}
+.entete_liste
+{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
