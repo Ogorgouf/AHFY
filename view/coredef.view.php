@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<?php $current = "cercle_reflexion" ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include("include/link.php") ?>
@@ -14,7 +15,7 @@
 
 <section  class="premiere_vue">
     <div  class="presentation">
-       <span class="nom_association">ceredef</span><br>
+       <span class="nom_association">coredef</span><br>
        <span class="slogan"></span>
     </div>
     
