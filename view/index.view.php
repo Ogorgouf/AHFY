@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<?php $current = "ahfy" ?>
+<?php $current = "logo" ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include("include/link.php") ?>    
+       
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AFY</title>
+    <?php include("include/link.php") ?> 
 </head>
 <body>
     

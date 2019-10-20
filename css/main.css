@@ -9,6 +9,7 @@ body
 h1
 {
     color:rgb(2, 110, 35);
+    
 }
 *
 {
@@ -24,7 +25,8 @@ header
     left: 20%;
     border-bottom: 2px solid rgba(221, 221, 221, 0.438);
     margin: auto;
-    padding: 30px 0 30px 0;
+    padding-left: 100px;
+    
 
     
 }
@@ -43,6 +45,13 @@ header
     padding-top: 30px;
     
 }
+.logoafy
+{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    
+}
 .les_liens
 {
     text-decoration: none;
@@ -51,6 +60,9 @@ header
     font-family: segoe ui;
     padding-bottom: 30px;
     transition: .6s;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -2px;
 }
 .menu
 {
@@ -82,13 +94,18 @@ header
 }
 .déroulant 
 {
-    height: 100px;
-    width: 200px;
-    background-color: #fff;
+    
+    background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
+    padding: 10px;
     visibility: hidden
+}
+
+ul
+{
+    padding: 0;
 }
 .déroulant1
 {
@@ -97,7 +114,7 @@ header
     background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
     left: 10%;
     visibility: hidden
 }
@@ -105,12 +122,15 @@ header
 {
     width: 100%;
     height: 200px;
-    border-top:1px solid rgb(243, 140, 22);
+   
     position: absolute;
     left:100%;
-    top:4%;
+    top:0%;
     background-color: #ddd;
-    visibility: hidden
+    visibility: hidden;
+    border: 1px solid silver;
+    border-top:2px solid rgb(243, 140, 22);
+
 
 }
 .membres1
@@ -120,7 +140,7 @@ header
     border-top:1px solid rgb(243, 140, 22);
     position: absolute;
     left:100%;
-    top:10%;
+    top:19%;
     background-color: #ddd;
     visibility: hidden
 
@@ -181,7 +201,7 @@ hr{
     background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
     left: 18%;
     visibility: hidden
 }
@@ -192,7 +212,7 @@ hr{
     background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
     left: 45%;
     visibility: hidden
 }
@@ -203,7 +223,7 @@ hr{
     background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
     left: 65%;
     visibility: hidden
 }
@@ -214,7 +234,7 @@ hr{
     background-color: #ddd;
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:81px;
+    top:78px;
     left: 90%;
     visibility: hidden
 }
@@ -269,13 +289,15 @@ hr
     width: 70%;
     margin: auto;
     
-    background-color: #fff;
+    background-image: url(../img/background-section.jpg);
+    background-size: cover;
     border-radius: 4px;
     box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
     border-top: 2px solid rgb(243, 140, 22);
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    
 }
 .fassociation
 {
@@ -328,6 +350,10 @@ hr
 .notifications h1
 {
     border-bottom: 1px solid rgb(2, 110, 35);
+    background-color: white;
+    margin: 0;
+    padding-top: 20px;
+    
 }
 .notification{
     width: 60%;
@@ -362,6 +388,7 @@ footer
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
 }
+<<<<<<< HEAD
 .liste_des_membres
 {
 
@@ -454,3 +481,32 @@ input
     background-color: rgb(114, 231, 114);
     font-weight: bold;
 }
+=======
+@media(max-width:612px)
+{
+    .notifications
+    {
+        width: 100%;
+    }
+    .fassociation
+    {
+        flex-direction: column;
+        
+    }
+    .passociation
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .notification
+    {
+        width: 80%;
+    }
+    .premiere_vue
+    {
+        background-size: 150% 100%;
+        background-position: left;
+    }
+}
+>>>>>>> 950bf12761b21a22c67064704f98c69a1b763bdd
