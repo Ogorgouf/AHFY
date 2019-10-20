@@ -9,6 +9,7 @@ body
 h1
 {
     color:rgb(2, 110, 35);
+    
 }
 *
 {
@@ -24,7 +25,8 @@ header
     left: 20%;
     border-bottom: 2px solid rgba(221, 221, 221, 0.438);
     margin: auto;
-    padding: 30px 0 30px 0;
+    padding-left: 100px;
+    
 
     
 }
@@ -43,6 +45,13 @@ header
     padding-top: 30px;
     
 }
+.logoafy
+{
+    position: absolute;
+    left: 0;
+    top: 10px;
+    
+}
 .les_liens
 {
     text-decoration: none;
@@ -51,6 +60,9 @@ header
     font-family: segoe ui;
     padding-bottom: 30px;
     transition: .6s;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: -2px;
 }
 .les_liens:hover
 {
@@ -92,13 +104,15 @@ hr
     width: 70%;
     margin: auto;
     
-    background-color: #fff;
+    background-image: url(../img/background-section.jpg);
+    background-size: cover;
     border-radius: 4px;
     box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
     border-top: 2px solid rgb(243, 140, 22);
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
+    
 }
 .fassociation
 {
@@ -150,6 +164,10 @@ hr
 .notifications h1
 {
     border-bottom: 1px solid rgb(2, 110, 35);
+    background-color: white;
+    margin: 0;
+    padding-top: 20px;
+    
 }
 .notification{
     width: 60%;
@@ -183,4 +201,31 @@ footer
     height: 100px;
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
+}
+@media(max-width:612px)
+{
+    .notifications
+    {
+        width: 100%;
+    }
+    .fassociation
+    {
+        flex-direction: column;
+        
+    }
+    .passociation
+    {
+        width: 80%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    .notification
+    {
+        width: 80%;
+    }
+    .premiere_vue
+    {
+        background-size: 150% 100%;
+        background-position: left;
+    }
 }
