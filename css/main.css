@@ -373,6 +373,7 @@ footer
     font-style: italic;
     color: brown;
     margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 .liste_membre
 {
@@ -393,6 +394,11 @@ footer
     height: 30vh;
     margin-top: 5vh;
 }
+.div_photo_profil
+{
+    border: 1px solid orange;
+    width: 75%;
+}
 .photo_de_profil
 {
     height: 60px;
@@ -406,7 +412,7 @@ footer
 }
 .nom
 {
-    border: 1px solid  rgb(243, 140, 22);   
+   
 }
 .conexion
 {
@@ -447,10 +453,4 @@ input
 {
     background-color: rgb(114, 231, 114);
     font-weight: bold;
-}
-.entete_liste
-{
-    display: flex;
-    flex-direction: row;
-    border: 1px solid red;
 }
