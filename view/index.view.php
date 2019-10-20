@@ -14,17 +14,58 @@
 
 <section  class="premiere_vue">
     <div  class="presentation">
-       <span class="nom_association">association fokoué de yaoundé</span><br>
+       <span class="nom_association">association fokoué <br> de yaoundé</span><br>
        <span class="slogan">Rassemblement des hommes, femmes et jeunes fokoué de yaoundé.</span>
     </div>
-    
-   
-
-    
 </section>
 <section class="notifications">
-    <br><br>
+    <h1 align="center">ASSOCIATION</h1>
+    <div class="fassociation">
+        <div align="center" class="passociation">
+            <div class="sigle">
+                AHFY
+            </div>
+            <p class="description-sigle">Regroupement des hommes fokoué de yaoundé.</p>
+        </div>
+        <div align="center" class="passociation">
+            <div class="sigle">
+                AFFY
+            </div>
+            <p class="description-sigle">Regroupement des femmes fokoué de yaoundé.</p>
+        </div>
+        <div align="center" class="passociation">
+            <div class="sigle">
+                CECUSFO
+            </div>
+            <p class="description-sigle">*********** ******* ******** ******* **********.</p>
+        </div>
+    </div>
+    <div class="fassociation">
+        <div align="center" class="passociation">
+            <div class="sigle">
+            Génération 70
+            </div>
+            <p class="description-sigle">Regroupement des hommes fokoué de yaoundé.</p>
+        </div>
+        <div align="center" class="passociation">
+            <div class="sigle">
+            Génération 80
+            </div>
+            <p class="description-sigle">Regroupement des femmes fokoué de yaoundé.</p>
+        </div>
+        <div align="center" class="passociation">
+            <div class="sigle">
+            Génération 90
+            </div>
+            <p class="description-sigle">*********** ******* ******** ******* **********.</p>
+        </div>
+    </div>
+
+</section>
+<section class="notifications">
+    
     <h1 align="center">NOTIFICATIONS</h1>
+    
     <section class="notification">
         <div class="notification_image">
             <h2 align="center">MARIAGE</h2>

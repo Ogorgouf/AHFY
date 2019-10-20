@@ -36,70 +36,6 @@ header
     background-position: center;
     height: 110vh;
 }
-.nom_association
-{
-    font-size: 25px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: rgb(104, 50, 6);
-}
-.presentation
-{
-    
-    text-align: right;
-    padding:20vh 10vw 0 0;
-}
-.slogan
-{
-    display: inline-block;
-    width: 300px;
-    color: gray;
-    font-size: 20px;
-}
-.notifications{
-    width: 70%;
-    margin: auto;
-    
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
-    border-top: 2px solid rgb(243, 140, 22);
-    display: flex;
-    flex-direction: column;
-}
-.notification{
-    width: 60%;
-    height: 500px;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
-    border-top: 2px solid rgb(0, 173, 52);
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-direction: column;
-}
-.notification_image
-{
-    width: 100%;
-    height: 400px;
-    background-color: aqua;
-}
-.notification_image 
-{
-    padding: auto;
-}
-.notification_texte
-{
-    padding:20px;
-}
-footer
-{
-    margin-top: 70px;
-    height: 100px;
-    background-color: black;
-    border-top: 3px solid rgb(243, 140, 22);
-}
 .copyright
 {
     text-align: center;
@@ -125,4 +61,126 @@ footer
 {
     border-bottom: 2px solid rgb(243, 140, 22);
     padding-bottom: 30px;
+}
+
+.nom_association
+{
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(104, 50, 6);
+}
+.presentation
+{
+    
+    text-align: right;
+    padding:20vh 10vw 0 0;
+}
+.slogan
+{
+    display: inline-block;
+    width: 300px;
+    color: gray;
+    font-size: 20px;
+}
+hr
+{
+    background-color: rgb(243, 140, 22);
+}
+.notifications
+{
+    width: 70%;
+    margin: auto;
+    
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
+    border-top: 2px solid rgb(243, 140, 22);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.fassociation
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    margin-top: 40px;
+}
+.passociation
+{
+    
+    width: 26%;
+    height: 200px;
+    border-top: 2px solid rgb(2, 110, 35);
+    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(2, 110, 35);
+}
+.passociation:hover
+{
+    background-color: #fff;
+    transition: .6s;
+}
+.sigle
+{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fff;
+}
+.description-sigle
+{
+    display: none;
+    font-weight: bold;
+    font-size: 0;
+    transition: .6s;
+}
+.passociation:hover .sigle
+{
+   color: rgb(2, 110, 35);
+}
+.passociation:hover .description-sigle
+{
+    display: block;
+    font-size: 15px;
+    transition: .6s;
+}
+.notifications h1
+{
+    border-bottom: 1px solid rgb(2, 110, 35);
+}
+.notification{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    background-color: #fff;
+    box-shadow: 4px 4px 8px 4px rgba(27, 24, 24, 0.274);
+    border-top: 2px solid rgb(0, 173, 52);
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.notification_image
+{
+    width: 100%;
+    height: 400px;
+    background-color: aqua;
+}
+.notification_image 
+{
+    padding: auto;
+}
+.notification_texte
+{
+    padding:20px;
+}
+footer
+{
+    margin-top: 70px;
+    height: 100px;
+    background-color: black;
+    border-top: 3px solid rgb(243, 140, 22);
 }
