@@ -1,9 +1,15 @@
-<header align="center">
+<header align="center" class="">
+<a href="index.php" class="logoafy"> <img src="img/logoafy.png" title="page d'acceuil" alt="logoafy" ></a>
     <nav>
 
-        <a href="index.php" class="logoafy"> <img src="img/logoafy.png" title="page d'acceuil" alt="logoafy" ></a>
+    <div id="btn_header">
         
-
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        
+        <div id="headerpc">
         <div class="menu"> <a href="ahfy.php" class="les_liens <?php if($current == "ahfy"){ echo "current";} ?>">AHFY</a><div class='déroulant'>
         <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien"  href="">Listes des membres</a><div class="membres"></div> </div></li>
@@ -70,6 +76,11 @@
                 <hr>
             </ul>
        </div></div>
+        </div>
+        
 
+       
     </nav>
+    
 </header>
+<?php include("include/connexion.php")?>

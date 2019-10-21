@@ -22,14 +22,14 @@ a
 header
 {
     position: fixed;
-    left: 20%;
+    left: 15%;
     border-bottom: 2px solid rgba(221, 221, 221, 0.438);
     margin: auto;
-    padding-left: 100px;
-    
-
-    
+    padding-left: 138px;
+   
+      
 }
+
 .premiere_vue
 {
     background-image: url(../img/background-acceuil.jpg);
@@ -63,6 +63,7 @@ header
     display: inline-block;
     margin-top: 10px;
     margin-bottom: -2px;
+    
 }
 .menu
 {
@@ -388,8 +389,112 @@ footer
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
 }
+#sconnexion
+{
+    position: fixed;
+    left: -222px;
+    transition: .8s;
+}
+
+.active
+{
+    left: 0px;
+    transition: .8s;
+}
+.scr
+{
+    background-color: rgba(36, 35, 35, 0.575);
+    box-shadow: 4px 4px 8px 4px rgba(51, 51, 51, 0.267);
+    
+    
+}
+#bconnexion
+{
+    position: absolute;
+    left: 250px;
+    top: 120px;
+    color: rgb(243, 140, 22);
+    padding: 1px;
+    border-radius: 50%;
+    border: 2px solid rgb(14, 13, 13);
+    transition: .8s;
+    background: none;
+}
+#bconnexion:hover
+{
+    background-color: rgb(255, 255, 255);
+    color: rgb(27, 24, 24);
+    transition: .8s;
+}
+.dconnexion
+{
+    height: 50vh;
+    width: 220px;
+    position: absolute;
+    top: 100px;
+    border: 2px solid rgb(29, 29, 28);
+    background-image: url(../img/background-section.jpg);
+    background-size: cover;
+    
+}
+#btn_header
+{
+    display: inline-block;
+    margin-bottom: 15px;
+    display: none;
+}
+#btn_header span
+{
+    display: block;
+    width: 50px;
+    height: 5px;
+    margin-top: 8px;
+    margin-left: 45vw;
+    z-index: 99;
+    background-color: rgb(0, 0, 0);
+}
+input
+{
+    padding: 5px;
+    
+    border: 1px solid silver;
+
+}
 @media(max-width:612px)
 {
+    #btn_header
+    {
+        display: block;
+        z-index: 99;
+        margin-top: 20px;
+    }
+    #headerpc
+    {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        background-color: #DDD;
+        width: 100vw;
+        right: -5vw;
+        height: 100vh;
+        z-index: -1;
+        visibility: hidden;
+        transition: 0;
+        padding-top: 100px;
+    }
+    .les_liens
+    {
+        color: #000;
+        border-bottom: 1px solid silver;
+        margin: 0;
+        width: 100%;
+        
+    }
+    .les_liens:hover
+    {
+        background-color: silver;
+    }
     .notifications
     {
         width: 100%;
