@@ -388,7 +388,7 @@ footer
     background-color: black;
     border-top: 3px solid rgb(243, 140, 22);
 }
-<<<<<<< HEAD
+
 .liste_des_membres
 {
 
@@ -479,9 +479,63 @@ input
 .input_email_mdp
 {
     background-color: rgb(114, 231, 114);
-    font-weight: bold;
+    font-weight: bold ;
 }
-=======
+.insertion
+{
+    width: 70%;
+    height: 90%;
+    margin: auto;
+    background-color: #ddd;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    border-top: 2px solid rgb(243, 140, 22);
+}
+.form_insertion
+{
+    border: none;
+    
+}
+textarea
+{
+    max-width: 600px;
+    max-height: 300px;
+    
+}
+.file
+{
+    
+    border: 1px solid rgb(83, 82, 82)
+}
+.inserer
+{
+ 
+    width: 100px; 
+    border: 1px solid rgb(70, 68, 68)
+}
+select
+{
+   
+    width: 300px;
+    height: 30px;
+  
+}
+.bouton_retour
+{
+    height: 30px;
+    width: 100px;
+    margin: auto;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 10%;
+    position: absolute;
+    left: 70%;
+    top: 2%;
+    background-color: rgb(255, 255, 255);
+    color:black;
+    text-decoration: none;
+}
 @media(max-width:612px)
 {
     .notifications
@@ -508,5 +562,6 @@ input
         background-size: 150% 100%;
         background-position: left;
     }
+    
+
 }
->>>>>>> 950bf12761b21a22c67064704f98c69a1b763bdd
