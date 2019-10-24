@@ -12,7 +12,7 @@
     
 <!---------Header------------------------------------------->
 <?php include("include/header.php")?>
-<section  class="premiere_vue ahfy">
+<section  class="premiere_vue">
     <div  class="presentation">
        <span class="nom_association">association des hommes fokoué de yaoundé</span><br>
        <span class="slogan">Rassemblement de tous les hommes fokoué de yaoundé</span>
