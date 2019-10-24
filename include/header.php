@@ -1,7 +1,8 @@
 <header align="center" class="">
-<a href="index.php" class="logoafy"> <img src="img/logoafy.png" title="page d'acceuil" alt="logoafy" ></a>
-    <nav>
+<div class="hdr"></div>
 
+    <nav>
+    <a href="index.php" class="logoafy"> <img src="img/logoafy.png" title="page d'acceuil" alt="logoafy" ></a>
     <div id="btn_header">
         
         <span></span>
@@ -10,16 +11,19 @@
         </div>
         
         <div id="headerpc">
-        <div class="menu"> <a href="ahfy.php" class="les_liens <?php if($current == "ahfy"){ echo "current";} ?>">AHFY</a><div class='déroulant'>
-        <ul>
-                <li class="sous_liens"><div class="sous_div"><a class="lien"  href="">Listes des membres</a><div class="membres"></div> </div></li>
-                <hr>
-                <li class="sous_liens"><a class="lien" href="">connexion</a></li>
-                
-            </ul>
+        <div class="menu"> 
+            <a href="ahfy.php" class="les_liens <?php if($current == "ahfy"){ echo "current";} ?>">AHFY</a>
+                <div class='déroulant'>
+                        <ul>
+                            <li class="sous_liens"><div class="sous_div"><a class="lien"  href="">Listes des membres</a>
+                             </div></li>
+                            <hr>
+                            <li class="sous_liens"><a class="lien" href="">connexion</a></li>
+                            
+                        </ul>
         </div></div>
        
-        <div class="menu"><a href="affy.php" class="les_liens  <?php if($current == "affy"){ echo "current";} ?>" >AFFY</a><div class='déroulant1'>
+        <div class="menu"><a href="affy.php" class="les_liens  <?php if($current == "affy"){ echo "current";} ?>" >AFFY</a><div class='déroulant'>
         <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien"  href="">Listes des membres</a><div class="membres"></div> </div></li>
                 <hr>
@@ -27,7 +31,7 @@
                 <hr>
             </ul>
         </div></div>
-        <div class="menu"> <a href="aj.php" class="les_liens  <?php if($current == "aj"){ echo "current";} ?>">Association des jeunes</a><div class='déroulant2'>
+        <div class="menu"> <a href="aj.php" class="les_liens  <?php if($current == "aj"){ echo "current";} ?>">Association des jeunes</a><div class='déroulant'>
             <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien "  href="cecusfo.php">CECUSFO</a><div class="membres"></div> </div></li>
                 <hr>
@@ -41,7 +45,7 @@
                 <hr>
             </ul>
         </div></div>
-        <div class="menu">  <a href="groupe_culturel.php" class="les_liens  <?php if($current == "groupe_culturel"){ echo "current";} ?>">Groupes culturels</a><div class='déroulant3'>
+        <div class="menu">  <a href="groupe_culturel.php" class="les_liens  <?php if($current == "groupe_culturel"){ echo "current";} ?>">Groupes culturels</a><div class='déroulant'>
         <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien"  href="lissa.php">LISSA</a><div class="membres"></div> </div></li>
                 <hr>
@@ -54,7 +58,7 @@
                 <hr>
             </ul>
         </div></div>
-       <div class="menu"> <a href="cercle_reflexion.php" class="les_liens  <?php if($current == "cercle_reflexion"){ echo "current";} ?>">Cercles de reflexions</a><div class='déroulant4'>
+       <div class="menu"> <a href="cercle_reflexion.php" class="les_liens  <?php if($current == "cercle_reflexion"){ echo "current";} ?>">Cercles de reflexions</a><div class='déroulant'>
        <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien"  href="codef.php">CODEF</a><div class="membres"></div> </div></li>
                 <hr>
@@ -64,7 +68,7 @@
                 <hr>
             </ul>
        </div></div>
-       <div class="menu"> <a href="" class="les_liens <?php if($current == "autres"){ echo "current";} ?>">Autres</a><div class='déroulant5'>
+       <div class="menu"> <a href="" class="les_liens <?php if($current == "autres"){ echo "current";} ?>">Autres</a><div class='déroulant'>
        <ul>
                 <li class="sous_liens"><div class="sous_div"><a class="lien"  href="mere_enfant.php">Mères d'enfants</a><div class="membres"></div> </div></li>
                 <hr>
@@ -82,4 +86,5 @@
     </nav>
     
 </header>
+
 <?php include("include/connexion.php")?>

@@ -11,7 +11,7 @@
             <input type="text" id="nom" name="nom" placeholder="Nom d'utilisateur..."><br><br><br>
             <label for="nom"><b>MOT DE PASSE</b> </label> <br>
             <input type="text" id="mdp" name="mdp" placeholder="Mot de passe...">
-
+            <input type="submit" id="sbtn" value="CONNEXION">
         </form>
     </div>
 </section>

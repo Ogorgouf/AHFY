@@ -12,7 +12,7 @@
     
 <!---------Header------------------------------------------->
 <?php include("include/header.php")?>
-<section  class="premiere_vue">
+<section  class="premiere_vue affy">
     <div  class="presentation">
        <span class="nom_association">association des femmes fokoué de yaoundé</span><br>
        <span class="slogan">Rassemblement de toutes les  femmes fokoué de yaoundé.</span>
