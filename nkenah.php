@@ -1,1 +1,4 @@
-<?php include("view/nkenah.view.php")?>
+<?php 
+
+
+include("view/nkenah.view.php")?>

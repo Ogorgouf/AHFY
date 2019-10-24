@@ -25,23 +25,7 @@
 <section class="notifications">
     <br><br>
     <h1 align="center">NOTIFICATIONS</h1>
-    <section class="notification">
-        <div class="notification_image">
-            <h2 align="center">MARIAGE</h2>
-        </div>
-        <div class="notification_texte">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis dolorum eveniet repellendus officia facere nihil ipsum.
-            <br> <br>
-            <hr>
-            <p align="right">18.01 15oct2019</p>
-        </div>
-    </section>
-     <section class="notification">
-
-    </section>
-     <section class="notification">
-
-    </section>
+    <?php include("include/notif.php") ?>
 </section>
 
 <!---------Footer------------------------------------------->
