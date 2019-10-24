@@ -22,12 +22,41 @@ a
 header
 {
     position: fixed;
-    left: 15%;
-    border-bottom: 2px solid rgba(221, 221, 221, 0.438);
+    
+    
     margin: auto;
     padding-left: 138px;
+    
+    
+    width: 100vw;
+    box-sizing: border-box;
    
       
+}
+header::after
+{
+content: "";
+display: block;
+width: 82%;
+height: 2px;
+background-color:rgba(221, 221, 221, 0.438) ;
+
+}
+.header nav
+{
+    position: relative;
+    left: 15%;
+    display: block;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    
+}
+.logoafy
+{
+    position: relative;
+    left: 11%;
 }
 
 .premiere_vue
@@ -37,6 +66,14 @@ header
     background-repeat: no-repeat;
     background-position: center;
     height: 110vh;
+}
+.ahfy
+{
+    background-image: url(../img/background-acceuil2.jpg);
+}
+.affy
+{
+    background-image: url(../img/background-acceuil3.jpg);
 }
 .copyright
 {
@@ -48,7 +85,7 @@ header
 .logoafy
 {
     position: absolute;
-    left: 0;
+    
     top: 10px;
     
 }
@@ -68,6 +105,7 @@ header
 .menu
 {
     display: inline;
+    position: relative;
 }
 .menu:hover .déroulant
 {
@@ -96,10 +134,13 @@ header
 .déroulant 
 {
     
-    background-color: #ddd;
+    background-color: rgb(243, 242, 242);
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:78px;
+   
+    top:53px;
+    left: 0;
+    width: 180px;
     padding: 10px;
     visibility: hidden
 }
@@ -169,6 +210,22 @@ ul
     background-color: #ddd;
     visibility: hidden
 
+}
+#sbtn
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(243, 140, 22);
+    padding: 10px;
+    transition: .7s;
+    
+}
+
+#sbtn:hover
+{
+    
+    background-color: rgb(250, 170, 78);
+    transition: .7s;
 }
 .sous_div
 {
@@ -263,10 +320,12 @@ hr{
 
 .nom_association
 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
+    display: inline-block;
+    width: 400px;
     text-transform: uppercase;
-    color: rgb(104, 50, 6);
+    color: rgb(255, 147, 6);
 }
 .presentation
 {
@@ -428,7 +487,7 @@ footer
 }
 .dconnexion
 {
-    height: 50vh;
+    height: 55vh;
     width: 220px;
     position: absolute;
     top: 100px;
@@ -536,6 +595,7 @@ input
         flex-direction: column;
         position: absolute;
         top: 0;
+        left: 0;
         background-color: #DDD;
         width: 100vw;
         right: -5vw;
@@ -575,6 +635,12 @@ input
     .notification
     {
         width: 80%;
+    }
+    .déroulant 
+    {
+        width: 100vw;
+        z-index: 9999;
+        background-color: rgba(0, 0, 0, 0.89);
     }
     .premiere_vue
     {
