@@ -25,7 +25,7 @@ if(isset($_POST['connexion']))
         $message="tous les champs doivent etre remplis !!!";
     }
 }
-//--------------------------deconnexion-------------//
+//-------------------deconnexion-------------//
 
 if(isset($_POST['deconnexion']))
 {
