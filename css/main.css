@@ -638,7 +638,7 @@ input
 {
     border: 1px solid silver ;
     width: 60%;
-    margin-left: 20%;
+    margin-bottom: 20px;
     margin-top: 20px;
     height: 30px;
 }
@@ -665,28 +665,25 @@ input
     width: 60%;
     margin-left: 0%;
 }
-<<<<<<< HEAD
-    .cat
-    {
-        flex-direction: column;
-    }
-    .dconnexion
-    {
-        top: 0;
-        
-    }
+.cat
+{
+    flex-direction: column;
+}
+.dconnexion
+{
+    top: 0;
     
-    .dconnexion h2
-    {
-        display: none;
-    }
-    .nom_association
-    {
-        font-size: 25px;
-        width: 300px;
-    }
-=======
+}
 
+.dconnexion h2
+{
+    display: none;
+}
+.nom_association
+{
+    font-size: 25px;
+    width: 300px;
+}
 .pagination
 {
     
@@ -724,7 +721,6 @@ input
 
 @media(max-width:612px)
 {
->>>>>>> f3e4e86a3ecde4e6d733f5abb9df094dc1151f72
     #btn_header
     {
         display: block;

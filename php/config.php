@@ -25,7 +25,7 @@ if(isset($_POST['connexion']))
         $message="tous les champs doivent etre remplis !!!";
     }
 }
-//-------------------deconnexion-------------//
+//--------------------------deconnexion-------------//
 
 if(isset($_POST['deconnexion']))
 {
@@ -92,7 +92,7 @@ if(isset($_POST['inserer']))
         }
         else
         {
-            $message="votre yaille d'image doit etre inferieur à 2mo";
+            $message="votre taille d'image doit etre inferieur à 2mo";
         }
     }
 
@@ -123,7 +123,18 @@ $recup= $bdd->prepare('SELECT * FROM  evenement WHERE association=? ORDER BY id 
 $recup->execute(array($association));
 
 
+//----------------------------Ajout membre------------------------------//
 
+if(isset($_POST['ajouter']))
+{
+    $nom_membre = htmlspecialchars($_POST['nom_membre']);
+    $profession_membre = htmlspecialchars($_POST['profession']);
+    
+    $situation_finance = htmlspecialchars($_POST['situation_finance']);
+
+    $insert = $bdd->prepare("INSERT INTO `membres` ( `nom`, `association`, `situation_financiere`, `photo`) VALUES (?, ?, ?, '')");
+    $insert->execute(array($nom_membre,$association,$situation_finance));
+}
 
 
 ?>

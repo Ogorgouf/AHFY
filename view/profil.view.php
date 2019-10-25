@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
 <?php $current = " " ?>
@@ -38,7 +38,7 @@
             </div>
             <?php if(isset($_SESSION['id'])){ ?>
             <form action="" method="post">
-            <input type="submit" name="deconnexion" value="deconnexion" class="inserer">
+            <input type="submit" name="deconnexion" value="deconnexion" class="lio">
             </form>
             
             <?php } ?>
@@ -48,26 +48,25 @@
     <section align="center" class="notification">
     <h2 align="center">AJOUTER UN MEMBRE</h2>
     <form class="ajout_membre"  action="" method="post">
-    <input type="text"  name="nom_membre" placeholder=" nom"><br><br>
-    <input type="text" name="prenom_membre" placeholder=" prenom"><br><br>
-    <input type="text" name="profession" placeholder=" profession"><br><br>
-    <input type="text" name="situation_financiaire" placeholder=" situation financiaire"><br><br>
-    <input id="file" name="fichier2" type="file" accept="image/*">
-    <label for="file" class="lfile">Image/Video</label><br><br>
-    <input type="submit" class="inserer" name="ajouter" value="ajouter" >
+        <input type="text"  name="nom_membre" placeholder=" nom" required><br><br>
+        <input type="text" name="profession" placeholder=" profession" required><br><br>
+        <input type="text" name="situation_finance" placeholder=" situation financiere" required><br><br>
+        <input id="file" name="fichier2" type="file" accept="image/*">
+        <label for="file" class="lfile">Image/Video</label><br><br>
+        <input type="submit" class=" lio " name="ajouter" value="ajouter" >
 
     </form>
 
     
     </section>
 
-    <div align="center" class="notification">
+    <div align="center" class="insertion">
     
         <form  class="form_insertion" action="" method="post" enctype="multipart/form-data">
             <textarea  name="text_contenu" id="txtarea" placeholder=" Ajoutez un événement..." cols="50" rows="10"></textarea><br><br>    
         
-            <div align="center" class="cat">
-            <select class="ki" name="type" >
+            <div class="cat">
+            <select class="ki" name="type" id="">
                 <option value="" disabled selected>--Catégorie d'evenement---</option>
                 <option value="Deuil">Mariage</option>
                 <option value="Deuil">Deuil</option>
@@ -75,11 +74,11 @@
                 <option value="Reunion">Reunion</option>
                 <option value="Autres">Autres</option>
             </select>
-            <input class="ki" type="text" name='titre_evenement' placeholder=" titre de l'évènement"  >
-            <input class="ki" id="file" type="file" accept="image/*">
-            <label class="hi" for="file" >Image/Video</label>
+            <input type="text" name='titre_evenement' placeholder=" titre de l'évènement" class='hi' >
+            <input  type="file" name="image" accept="image/*">
+            
             </div><br>
-        <input class="lio" type="submit" name='inserer' value="Inserer">
+        <input class="lfile" type="submit" name='inserer' value="Inserer">
         </form>
     </div>
 <?php } ?>
