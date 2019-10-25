@@ -34,9 +34,10 @@ if(isset($_POST['deconnexion']))
 
 //------------------------evenement---------------------//
 
+
 if(isset($_POST['inserer']))
 {
-    
+    $file_name= $_FILES['image']['name'];
     if(!empty($_POST['type']) AND !empty($_POST['titre_evenement']) AND !empty($_POST['text_contenu']))
     {
         
@@ -47,8 +48,8 @@ if(isset($_POST['inserer']))
         {
             if(strlen($contenu)<=2000)
             {
-                $insertion = $bdd->prepare("INSERT INTO evenement ( `titre`, `contenu`, `media`, `association`, `categorie`,`date`) VALUES ( ?, ?, '',?,?,now());");
-                $insertion->execute(array($titre,$contenu,$association,$type));
+                $insertion = $bdd->prepare("INSERT INTO evenement ( `titre`, `contenu`, `media`, `association`, `categorie`,`date`, `image`) VALUES ( ?, ?, '',?,?,now(),?)");
+                $insertion->execute(array($titre,$contenu,$association,$type,$file_name));
             }
             else
             {
@@ -59,13 +60,68 @@ if(isset($_POST['inserer']))
         {
             $error="Le titre est trop long !!";
         }
+       
+    }
+    //------------insertion image ----------------//
+   
+    $file_type= $_FILES['image']['type'];
+    $file_size= $_FILES['image']['size'];
+    $file_tmp_loc= $_FILES['image']['tmp_name'];
+    $file_store= "media/".$file_name;
+
+    move_uploaded_file($file_tmp_loc, $file_store);
+    
+
+    if(isset($_FILES['image']) AND !empty($file_name))
+    {
+        $taillemax= 2097152;
+        $extentionvalide=array("jpg","jpeg","gif", "png");
+        if($file_size <= $taillemax)
+        {
+            $extentionoplord=strtolower(substr(strrchr($file_name,"."), 1 ));
+            if(in_array($extentionoplord,$extentionvalide))
+            {
+                $resultat=move_uploaded_file($file_tmp_loc,$file_store);
+                
+
+            }
+            else
+            {
+                $message="votre photo  doit etre au forma jif jpeg ou png";
+            }
+        }
+        else
+        {
+            $message="votre yaille d'image doit etre inferieur à 2mo";
+        }
     }
 
+    
 }
+
+//-------------------systeme de pagination-------------------//
+
+$evenementParPage= 5;
+$evenementTotalsreq= $bdd->query('SELECT id FROM evenement');
+$evenementTotals=$evenementTotalsreq->rowCount();
+$pagesTotals= ceil($evenementTotals/$evenementParPage);
+if(isset($_GET['page']) AND !empty($_GET['page']) AND $_GET['page'] > 0 AND $_GET['page']<= $pagesTotals)
+{
+    $_GET['page']=intval($_GET['page']);
+    $pagecourante = $_GET['page'];
+}
+else
+{
+    $pagecourante=1;
+}
+$départ=($pagecourante-1)* $evenementParPage;
+
+
 //-----------------------------affichage evenement---------------//
 
-$recup= $bdd->prepare('SELECT * FROM  evenement WHERE association=?');
+$recup= $bdd->prepare('SELECT * FROM  evenement WHERE association=? ORDER BY id DESC LIMIT '.$départ.','.$evenementParPage);
 $recup->execute(array($association));
+
 
 
 
