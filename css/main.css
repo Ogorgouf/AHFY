@@ -141,7 +141,7 @@ background-color:rgba(221, 221, 221, 0.438) ;
     top:53px;
     left: 0;
     width: 180px;
-    padding: 10px;
+    
     visibility: hidden
 }
 
@@ -164,10 +164,9 @@ ul
 {
     width: 100%;
     height: auto;
-   
     position: absolute;
-    left:105%;
-    top:-28px;
+    left:100%;
+    top:-18px;
     background-color: rgb(243, 243, 243);
     visibility: hidden;
     border: 1px solid silver;
@@ -445,7 +444,7 @@ footer
 {
     margin-top: 70px;
     height: 100px;
-    background-color: black;
+    background-color: #202020;
     border-top: 3px solid rgb(243, 140, 22);
 }
 #sconnexion
@@ -594,6 +593,21 @@ input
 
 @media(max-width:612px)
 {
+    .dconnexion
+    {
+        top: 0;
+        
+    }
+    
+    .dconnexion h2
+    {
+        display: none;
+    }
+    .nom_association
+    {
+        font-size: 25px;
+        width: 300px;
+    }
     #btn_header
     {
         display: block;
@@ -628,6 +642,7 @@ input
     {
         background-color: silver;
     }
+    
     .notifications
     {
         width: 100%;
@@ -651,11 +666,26 @@ input
     {
         width: 100vw;
         z-index: 9999;
-        background-color: rgba(0, 0, 0, 0.89);
+        background-color: rgb(0, 0, 0);
+        top: 50px;
+        left: 0;
     }
     .premiere_vue
     {
-        background-size: 150% 100%;
+        background-size: 220% 100%;
         background-position: left;
+    }
+    .menu:hover .déroulant
+    {
+        visibility: hidden;
+    }
+    .resp:hover .déroulant
+    {
+        visibility: visible;
+    }
+    .presentation
+    {
+        text-align: center;
+        padding-left: 10%;
     }
 }
