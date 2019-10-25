@@ -22,12 +22,41 @@ a
 header
 {
     position: fixed;
-    left: 15%;
-    border-bottom: 2px solid rgba(221, 221, 221, 0.438);
+    
+    
     margin: auto;
     padding-left: 138px;
+    
+    
+    width: 100vw;
+    box-sizing: border-box;
    
       
+}
+header::after
+{
+content: "";
+display: block;
+width: 82%;
+height: 2px;
+background-color:rgba(221, 221, 221, 0.438) ;
+
+}
+.header nav
+{
+    position: relative;
+    left: 15%;
+    display: block;
+    box-sizing: border-box;
+    background-color: aqua;
+    height: 100%;
+    width: 100%;
+    
+}
+.logoafy
+{
+    position: relative;
+    left: 11%;
 }
 
 .premiere_vue
@@ -37,6 +66,14 @@ header
     background-repeat: no-repeat;
     background-position: center;
     height: 110vh;
+}
+.ahfy
+{
+    background-image: url(../img/background-acceuil2.jpg);
+}
+.affy
+{
+    background-image: url(../img/background-acceuil3.jpg);
 }
 .copyright
 {
@@ -48,7 +85,7 @@ header
 .logoafy
 {
     position: absolute;
-    left: 0;
+    
     top: 10px;
     
 }
@@ -68,6 +105,7 @@ header
 .menu
 {
     display: inline;
+    position: relative;
 }
 .menu:hover .déroulant
 {
@@ -96,11 +134,14 @@ header
 .déroulant 
 {
     
-    background-color: #ddd;
+    background-color: rgb(243, 242, 242);
     border-top: 2px solid rgb(243, 140, 22);
     position: absolute;
-    top:78px;
-    padding: 10px;
+   
+    top:53px;
+    left: 0;
+    width: 180px;
+    
     visibility: hidden
 }
 
@@ -168,6 +209,22 @@ ul
     background-color: #ddd;
     visibility: hidden
 
+}
+#sbtn
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(243, 140, 22);
+    padding: 10px;
+    transition: .7s;
+    
+}
+
+#sbtn:hover
+{
+    
+    background-color: rgb(250, 170, 78);
+    transition: .7s;
 }
 .sous_div
 {
@@ -262,10 +319,12 @@ hr{
 
 .nom_association
 {
-    font-size: 25px;
+    font-size: 35px;
     font-weight: bold;
+    display: inline-block;
+    width: 400px;
     text-transform: uppercase;
-    color: rgb(104, 50, 6);
+    color: rgb(255, 147, 6);
 }
 .presentation
 {
@@ -371,7 +430,7 @@ hr
 {
     width: 100%;
     height: 400px;
-    background-color:;
+    background-color: aqua;
 }
 .notification_image 
 {
@@ -398,7 +457,8 @@ footer
 .active
 {
     left: 0px;
-    transition: .8s;}
+    transition: .8s;
+}
 .scr
 {
     background-color: rgba(36, 35, 35, 0.925);
@@ -426,7 +486,7 @@ footer
 }
 .dconnexion
 {
-    height: 50vh;
+    height: 55vh;
     width: 220px;
     position: absolute;
     top: 100px;
@@ -460,14 +520,14 @@ input
 }
 .insertion
 {
-    width: 60%;
+    width: 50%;
     margin: auto;
     background-color: #fff;
-    
+    position: relative;
     border-top: 3px solid rgb(243, 140, 22);
     box-shadow: 4px 4px 8px 4px rgba(49, 49, 49, 0.342);
     padding-bottom: 10px;
-    
+    top: 50px;
 }
 #txtarea
 {
@@ -487,7 +547,12 @@ input
     justify-content: space-around;
 }
 .inserer{
-    l
+    color: rgb(243, 140, 22);
+    width: 95%;
+    border-radius: 2px;
+    background: none;
+    border: 1px solid rgb(243, 140, 22);
+    transition: .6s;
 }
 .inserer:hover
 {
@@ -499,7 +564,7 @@ input
 {
     display: none;
 }
-.lfile
+#lfile
 {
     background-color: rgb(243, 140, 22);
     padding: 10px;
@@ -508,141 +573,23 @@ input
     transition: .6s;
     border: 1px solid #fff;
 }
-.lfile:hover
+#lfile:hover
 {
     color: rgb(243, 140, 22);
     background: none;
     border: 1px solid rgb(243, 140, 22);
     transition: .6s;
 }
-.bo
+.end
 {
-    background: #fff;
-}
-
-.bloc-image
-{
-    background-color: #101010;
-    height: 30vh;
-    width: 100%;
-
-}
-
-.cform{
-    display: grid;
-    grid-template-columns: 35% 35% 35%;
-    width: 83%;
-    margin: 150px;
-}
-
-
-img .pp
-{
-    border-radius: 80%;
-    height: 30vh;
-}
-
-.ligne-hr
-{
-    position: relative;
-    bottom: 70px;
-    color: rgb(243, 140, 22);
-}
-
-.titre-infos
-{
-    position: absolute;
     
-    bottom: 390px;
-    left: 550px;
-    z-index: 999;
-    color: rgb(243, 140, 22);
+    left:-100%;
+
 }
-.titre_evenement
+.de 
 {
-    border: 1px solid rgb(90, 89, 89);
+    left: -105%;
 }
-
-.ajout_membre
-{
-    margin-left: 30%;
-    margin-top: 3%;
-    width: 12%;
-}
-
-.inpt ,.inpte::placeholder
-{
-    color: rgba(158, 152, 145, 0.787);
-    font-size: 15px;
-}
-
-.formulaire .dep
-{
-    margin-bottom: 30px;
-    font-size: 20px;
-}
-
-.dep input
-{
-    border: none;
-    border-bottom: 1px solid rgb(243, 140, 22);
-    transition: .5s;
-}
-
-.dep input:hover .inpte::placeholder
-{
-    border-bottom: 1px solid rgb(243, 140, 22);
-    transition: .5s;
-    font-size: 25px;
-}
-
-.sub-but
-{
-    color: rgb(243, 140, 22);
-    background-color: #fff;
-    padding: -10px;
-    position: relative;
-    top: 120px;
-    right: -92px;
-    width: 50%;
-    height: 45%;
-    border: 1px solid rgb(243, 140, 22);
-    transition: .5s;
-}
-
-.sub-but:hover
-{
-    background-color: rgb(243, 140, 22);
-    color: #fff;
-    transition: .5s;
-}
-.hor-1
-{
-    width: 20%;
-    color: rgb(243, 140, 22);
-}
-
-.hor-2
-{
-    width: 10%;
-    color: rgb(243, 140, 22);
-}
-
-
-.photo_admin{
-    border: 1px solid #4e4d4d;
-    height: 100%;
-    width: 70%;
-    margin: auto;
-}
-.infos_admin
-{
-margin-left: 12%;
-}
-
-
-
-
 
 @media(max-width:612px)
 {
@@ -673,6 +620,7 @@ margin-left: 12%;
         flex-direction: column;
         position: absolute;
         top: 0;
+        left: 0;
         background-color: #DDD;
         width: 100vw;
         right: -5vw;
@@ -713,6 +661,14 @@ margin-left: 12%;
     .notification
     {
         width: 80%;
+    }
+    .déroulant 
+    {
+        width: 100vw;
+        z-index: 9999;
+        background-color: rgb(0, 0, 0);
+        top: 0;
+        left: 0;
     }
     .premiere_vue
     {

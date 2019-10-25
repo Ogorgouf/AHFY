@@ -1,1 +1,3 @@
-<?php include("view/index.view.php")?>
+<?php 
+$association = " ";
+include("view/index.view.php")?>
