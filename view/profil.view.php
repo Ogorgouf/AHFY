@@ -52,7 +52,7 @@
     <input type="text" name="prenom_membre" placeholder=" prenom"><br><br>
     <input type="text" name="profession" placeholder=" profession"><br><br>
     <input type="text" name="situation_financiaire" placeholder=" situation financiaire"><br><br>
-    <input id="file" type="file" accept="image/*">
+    <input id="file" name="fichier2" type="file" accept="image/*">
     <label for="file" class="lfile">Image/Video</label><br><br>
     <input type="submit" class=" lfile " name="ajouter" value="ajouter" >
 
@@ -76,8 +76,8 @@
                 <option value="Autres">Autres</option>
             </select>
             <input type="text" name='titre_evenement' placeholder=" titre de l'évènement" class='titre_evenement' >
-            <input id="file" type="file" accept="image/*">
-            <label for="file" class="lfile">Image/Video</label>
+            <input  type="file" name="image" accept="image/*">
+            
             </div><br>
         <input class="lfile" type="submit" name='inserer' value="Inserer">
         </form>

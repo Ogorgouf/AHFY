@@ -25,7 +25,29 @@
 <section class="notifications">
     <br><br>
     <h1 align="center">NOTIFICATIONS</h1>
-    <?php include("include/notif.php") ?>
+    
+<?php while($r=$recup->fetch()) {?>
+<section class="notification">
+        <div class="notification_image">
+            <h2 align="center"><?= $r['titre'] ?></h2>
+           
+              <img src="media/<?=$r['image'] ?>" width="400px" alt="">  
+            
+        </div>
+        <div class="notification_texte">
+        <?= $r['contenu'] ?>
+            <br> <br>
+            <hr>
+            <p align="right"><?= $r['date'] ?></p>
+        </div>
+    </section>
+    <?php } ?>
+    <?php 
+    for($i=1; $i<=$pagesTotals;$i++)
+    {
+        echo '<div class="pagination"><a class="page" href=ahfy.php?page='.$i.'>'.$i.'</a>';
+    }
+    ?>
 </section>
 
 <!---------Footer------------------------------------------->
