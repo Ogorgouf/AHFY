@@ -1,1 +1,0 @@
-<?php include("view/autre_groupe.view.php")?>

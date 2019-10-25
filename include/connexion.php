@@ -1,3 +1,4 @@
+<?php if(!isset($_SESSION['id'])){ ?>
 <section id="sconnexion">
     <div  id="bconnexion" title="Connexion compte administrateur">
         <img src="img/admin.png" width="50" alt="">
@@ -11,7 +12,8 @@
             <input type="text" id="nom" name="nom" placeholder="Nom d'utilisateur..."><br><br><br>
             <label for="nom"><b>MOT DE PASSE</b> </label> <br>
             <input type="text" id="mdp" name="mdp" placeholder="Mot de passe...">
-            <input type="submit" id="sbtn" value="CONNEXION">
+            <input type="submit" name="connexion" id="sbtn" value="CONNEXION">
         </form>
     </div>
 </section>
+<?php } ?>
