@@ -1,8 +1,11 @@
-<?php if(!isset($_SESSION['id'])){ ?>
+
 <section id="sconnexion">
-    <div  id="bconnexion" title="Connexion compte administrateur">
-        <img src="img/admin.png" width="50" alt="">
-    </div>
+    
+   
+    <?php if(!isset($_SESSION['id'])){ ?>
+        <div  id="bconnexion" title="Connexion compte administrateur">
+            <img src="img/admin.png" width="50" alt="">
+        </div>
     <div align="center" class="dconnexion">
         <h2>CONNEXION ADMINISTRATEUR</h2>
         <hr>
@@ -15,5 +18,9 @@
             <input type="submit" name="connexion" id="sbtn" value="CONNEXION">
         </form>
     </div>
+    <?php }else{ ?>
+    <a href="deconnexion.php" class="me" title="deconnexion">
+        <img src="img/admin.png" width="50" alt="">
+    </a>
+    <?php } ?>
 </section>
-<?php } ?>

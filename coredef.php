@@ -1,1 +1,3 @@
-<?php include("view/coredef.view.php")?>
+<?php 
+$association="coredef";
+include("view/coredef.view.php")?>

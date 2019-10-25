@@ -1,1 +1,3 @@
-<?php include("view/mere_enfant.view.php")?>
+<?php 
+$association="mere_enfant";
+include("view/mere_enfant.view.php")?>

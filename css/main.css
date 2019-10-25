@@ -347,7 +347,7 @@ hr
 {
     width: 70%;
     margin: auto;
-    
+    height: auto;
     background-image: url(../img/background-section.jpg);
     background-size: cover;
     border-radius: 4px;
@@ -356,7 +356,7 @@ hr
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
-    
+    padding-bottom: 40px;
 }
 .fassociation
 {
@@ -478,6 +478,18 @@ footer
     transition: .8s;
     background: none;
 }
+.me
+{
+    position: absolute;
+    left: 250px;
+    top: 120px;
+    color: rgb(243, 140, 22);
+    padding: 1px;
+    border-radius: 50%;
+    border: 2px solid rgb(14, 13, 13);
+    transition: .8s;
+    background: none;
+}
 #bconnexion:hover
 {
     background-color: rgb(255, 255, 255);
@@ -518,12 +530,17 @@ input
     border: 1px solid silver;
 
 }
+.notification input
+{
+    width: 60%;
+    height: 25px;
+}
 .insertion
 {
-    width: 50%;
+    width: auto;
     margin: auto;
+    padding: 50px;
     background-color: #fff;
-    position: relative;
     border-top: 3px solid rgb(243, 140, 22);
     box-shadow: 4px 4px 8px 4px rgba(49, 49, 49, 0.342);
     padding-bottom: 10px;
@@ -544,13 +561,15 @@ input
 .cat
 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .inserer{
     color: rgb(243, 140, 22);
     width: 95%;
     border-radius: 2px;
     background: none;
+    height: 50px;
     border: 1px solid rgb(243, 140, 22);
     transition: .6s;
 }
@@ -564,7 +583,7 @@ input
 {
     display: none;
 }
-#lfile
+.lfile
 {
     background-color: rgb(243, 140, 22);
     padding: 10px;
@@ -573,7 +592,17 @@ input
     transition: .6s;
     border: 1px solid #fff;
 }
-#lfile:hover
+.lfil
+{
+    
+    background-color: rgb(243, 140, 22);
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    transition: .6s;
+    border: 1px solid #fff;
+}
+.lfile:hover
 {
     color: rgb(243, 140, 22);
     background: none;
@@ -590,9 +619,56 @@ input
 {
     left: -105%;
 }
-
+.ki
+{
+    padding: 0;
+    display: block;
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: azure;
+}
+.titre_evenement
+{
+    background-color: rgb(245, 248, 248);
+    width: 20%;
+    
+}
+.hi
+{
+    border: 1px solid silver ;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
+    height: 30px;
+}
+.lio
+{
+    display: block;
+    border: 1px solid silver ;
+    width: 60%;
+    background-color: rgb(243, 140, 22);
+    
+    height: 50px;
+}
 @media(max-width:612px)
 {
+    .ki
+    {
+        
+        width: 80%;
+        
+    }
+    .hi
+{
+    border: 1px solid silver ;
+    width: 60%;
+    margin-left: 0%;
+}
+    .cat
+    {
+        flex-direction: column;
+    }
     .dconnexion
     {
         top: 0;
@@ -660,7 +736,7 @@ input
     }
     .notification
     {
-        width: 80%;
+        width: 100%;
     }
     .déroulant 
     {
