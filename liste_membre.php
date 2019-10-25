@@ -1,0 +1,1 @@
+<?php include("view/liste_membre.view.php")?>

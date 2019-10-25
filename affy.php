@@ -1,0 +1,1 @@
+<?php include('view/affy.view.php')?>
